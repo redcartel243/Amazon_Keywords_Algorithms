@@ -4,7 +4,7 @@ import xlwings as xw
 THIS CODE GENERATES THE KEYWORD OVERVIEW REPORT"""
 
 wb = xw.Book(
-    r'F:\Documents\work\Amazon documents\FR\US work\Data analysis\FR KEYWORD OVERVIEW_COMPUTER GENERATED_2022.07.09 - 2022.10.06.xlsx')
+    r'FR KEYWORD OVERVIEW_COMPUTER GENERATED_2022.07.09 - 2022.10.06.xlsx')
 SPROWS = 2417
 SDROWS = 226
 sheet1 = wb.sheets['SP KEYWORD OVERVIEW']
