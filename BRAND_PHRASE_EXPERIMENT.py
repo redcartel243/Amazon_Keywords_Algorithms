@@ -20,16 +20,15 @@ def calculate_permutations(sentence):
 def main():
     resultStart = 3
     # Open the Excel file and select the sheet
-    filename = r'C:\Users\Red\Documents\work\Amazon documents\FR\US work\Data analysis\Python Projects\Search term ' \
-               r'analysis FR(BROAD).xlsx '
+    filename = r'Search term analysis FR(BROAD).xlsx '
     wb = xw.Book(filename)
-    sheet = wb.sheets['B08F7BVKFR']
+    sheet = wb.sheets['ASIN']
 
     # Extract the search terms from the sheet
     search_terms = sheet.range('F3:F129').value
 
     # Generate permutations for each search term and write to file
-    with open("C:/Users/Red/Documents/work/Amazon documents/FR/US work/Data analysis/Keywords coverage.txt", "a",
+    with open("Keywords coverage.txt", "a",
               encoding="utf-8") as f:
         for term in search_terms:
             perms = calculate_permutations(term)
