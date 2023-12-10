@@ -4,10 +4,7 @@ import datetime as dt
 """
 THIS CODE GENERATES THE SEARCH TERM REPORT"""
 
-wb = xw.Book(
-    r'C:\Users\Red\Documents\work\Amazon documents\FR\US work\Data analysis\Python Projects\General Search Term '
-    r'Analysis\FR\FR General Search Term Analysis '
-    r'Template (Macro version).xlsm')
+wb = xw.Book(r'FR General Search Term Analysis Template (Macro version).xlsm')
 # ---------------------
 # GLOBAL SEARCH TERM ANALYSIS VARIABLES
 sheet1 = wb.sheets['Sponsored Product Search Term R']
